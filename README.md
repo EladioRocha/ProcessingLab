@@ -31,4 +31,4 @@ The values are put directly in variables. The output show the result of x, y, z.
 
 ## 4.- Area of triangle
 From three points generate a triangle and its area is calculated.\
-![Generated triangle](https://user-images.githubusercontent.com/39393035/110971418-792b3900-8320-11eb-9819-8e356045696c.png)
+![Generated triangle](https://github.com/EladioRocha/ProcessingLab/blob/master/area_de_un_triangulo/result.gif)
