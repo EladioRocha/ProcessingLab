@@ -3,9 +3,9 @@ float ordenada = 30, abscisa = 30, i=1,j=-1,arriba = 30, rectaY = 1, rectaNegY =
 float posInicial1 = 30, posNeg1 = 30;
 
 //Variables de la ecuación
-float x = 0, m = 5, b = 7, y = b, copiaB = b;
+float x = 0, m = 1, b = 0, y = b, copiaB = b;
 
-float x1 = 0, m1 = 2, b1 = 2, y1 = b1, copiaB1 = b1;
+float x1 = 0, m1 = -1, b1 = 0, y1 = b1, copiaB1 = b1;
 
 //3x + 5y = 2;
 //y = (2 - 3x)/5
