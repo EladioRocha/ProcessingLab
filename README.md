@@ -1,5 +1,5 @@
 # ProcessingLab
-Projects created with proccessing. Codes were tested with the version 3.5.4 and they works.
+Projects created with [proccessing](https://processing.org/). Codes were tested with the version 3.5.4.
 
 ## 1.- Equation of the line
 The performance is very simple, only click in the first position (m) and then click at the end of the line (b).\
