@@ -4,7 +4,7 @@ int i = 0;
 
 void setup()
 {
-  size(5000, 5000);
+  size(500, 500);
 }
 
 void draw()

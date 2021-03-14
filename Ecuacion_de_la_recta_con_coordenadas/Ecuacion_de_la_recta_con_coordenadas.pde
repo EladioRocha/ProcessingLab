@@ -97,6 +97,6 @@ void mousePressed()
      fill(0);
      text("La ecuación de la recta es la siguiente: ",12,12,30);
      text("y = "+pendiente+"x"+" + "+interseccionY,20,25,30);
-     text("Si presiona cualquier tecla se reinicia",12,40,30);
+     text("Presiona cualquier tecla para reiniciar",12,40,30);
    }
 }
