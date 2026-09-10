@@ -1,34 +1,47 @@
-# ProcessingLab
-Projects created with [proccessing](https://processing.org/). Codes were tested with the version 3.5.4.
+# Processing Math Sketches
 
-## 1.- Equation of the line
-The performance is very simple, only click in the first position (m) and then click at the end of the line (b).\
-![Equation of the line working](https://github.com/EladioRocha/ProcessingLab/blob/master/Ecuacion_de_la_recta_con_coordenadas/result.gif)
+Four visual mathematics exercises written in **Processing Java mode**. The original README reports testing with Processing `3.5.4`; compatibility with other versions has not been verified here.
 
-**First straight line**\
-![First stright line of gif](https://github.com/EladioRocha/ProcessingLab/blob/master/Ecuacion_de_la_recta_con_coordenadas/result-1.png?raw=true)\
-**Result in geogebra**\
-![First straight line in geogebra](https://github.com/EladioRocha/ProcessingLab/blob/master/Ecuacion_de_la_recta_con_coordenadas/result-1-geogebra.png?raw=true)
+## Open a sketch
 
-**Second straight line**\
-![Second straight line of gif](https://github.com/EladioRocha/ProcessingLab/blob/master/Ecuacion_de_la_recta_con_coordenadas/result-2.png?raw=true)\
-**Result in geogebra**\
-![Second straight line in geogebra](https://github.com/EladioRocha/ProcessingLab/blob/master/Ecuacion_de_la_recta_con_coordenadas/result-2-geogebra.png?raw=true)
+Open the `.pde` file inside its matching directory in the Processing editor, then select **Run**. Each directory is a separate sketch; do not combine all files into one project. No npm or Python installation is needed.
 
-## 2.- Intersection between equation of the line
-In this case the values are put directly in variables.
+| Sketch | What to do |
+| --- | --- |
+| [Line through two points](Ecuacion_de_la_recta_con_coordenadas/Ecuacion_de_la_recta_con_coordenadas.pde) | Click two positions to define a line; pressing a key resets the drawing state. |
+| [Graph two line equations](Graficar_ecuacion/Graficar_ecuacion.pde) | Edit slope/intercept variables in the source and run the sketch. |
+| [Gauss–Jordan matrix exercise](Matriz_GaussJordan/Matriz_GaussJordan.pde) | Edit the augmented matrix in the source to explore elimination. |
+| [Triangle area](area_de_un_triangulo/area_de_un_triangulo.pde) | Click three points to construct a triangle and calculate its area. |
 
-**Result in proccessing**\
-![Result of intersection in proccessing](https://user-images.githubusercontent.com/39393035/110970127-0b324200-831f-11eb-9fb6-ac30ae0e32f7.png)\
-**Result in geogebra**\
-![Result in geogebra](https://user-images.githubusercontent.com/39393035/110970150-11282300-831f-11eb-940f-68e7ecddba96.png)
+## Line through two points
 
-## 3.- Solve matrix with Gauss Jordan method
-The values are put directly in variables. The output show the result of x, y, z.
+The two clicks are coordinates, not the slope and intercept themselves. The sketch derives those quantities from the selected points.
 
-**Result of matrix solved**\
-![Example of matrix solver](https://user-images.githubusercontent.com/39393035/110971215-32d5da00-8320-11eb-8213-2bf927e2ec49.png)
+![Two-point line demonstration](Ecuacion_de_la_recta_con_coordenadas/result.gif)
 
-## 4.- Area of triangle
-From three points generate a triangle and its area is calculated.\
-![Generated triangle](https://github.com/EladioRocha/ProcessingLab/blob/master/area_de_un_triangulo/result.gif)
+| Example | Processing result | GeoGebra comparison |
+| --- | --- | --- |
+| First line | [View](Ecuacion_de_la_recta_con_coordenadas/result-1.png) | [View](Ecuacion_de_la_recta_con_coordenadas/result-1-geogebra.png) |
+| Second line | [View](Ecuacion_de_la_recta_con_coordenadas/result-2.png) | [View](Ecuacion_de_la_recta_con_coordenadas/result-2-geogebra.png) |
+
+## Two line equations
+
+`m`, `b`, `m1`, and `b1` configure the two lines in `Graficar_ecuacion.pde`.
+
+![Line graph example](Graficar_ecuacion/result.png)
+
+[Original GeoGebra comparison](Graficar_ecuacion/result-geogebra.png)
+
+## Gauss–Jordan elimination
+
+The source uses a three-row augmented matrix. Adapt its values before running and inspect the displayed elimination output.
+
+![Matrix elimination example](Matriz_GaussJordan/result.png)
+
+## Triangle area
+
+![Three-point triangle demonstration](area_de_un_triangulo/result.gif)
+
+## Validation and limitations
+
+All previews above are repository-hosted historical images. The sketches are learning exercises rather than a general numerical library. Check vertical lines, repeated points, degenerate triangles, and zero pivots before extending their formulas. There is no automated test suite, and no Processing runtime execution was performed during this documentation update.
